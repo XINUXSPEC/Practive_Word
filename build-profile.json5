@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\fyx\\.ohos\\config\\default_Practive_Project_mg0MiJYOs9yPb0XV2CmajNILcYaU_sUxePVpoofdQzU=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BEBF7C9B0A76EBF2CC680DA38FA77D0F20DAAF97DB3F443F417F3BAE93106A4303D3C240ACD2A84",
+          "profile": "C:\\Users\\fyx\\.ohos\\config\\default_Practive_Project_mg0MiJYOs9yPb0XV2CmajNILcYaU_sUxePVpoofdQzU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\fyx\\.ohos\\config\\default_Practive_Project_mg0MiJYOs9yPb0XV2CmajNILcYaU_sUxePVpoofdQzU=.p12",
+          "storePassword": "0000001B5E7A22F2ED3ED665D1158653BD629AA13E59AE4B9E10746F65C90B1FB6313676FC8A0001D6D7F9"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.2(14)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
